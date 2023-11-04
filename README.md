@@ -48,3 +48,6 @@ Copyright © 2023 Sumayyah Akther Emama. All Rights Reserved.
 ## License
 
 Licensed under the MIT license
+
+## Deployment 
+ https://sae9.github.io/My-portfolio/ 
