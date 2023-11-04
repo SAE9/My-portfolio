@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+/*style for the body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*style for the header and added a backgroud color*/
+.header {
+  width: 100%;
+  height: 100px;
+  display: block;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+/* Style for the nav bar*/
+.topnav {
+  width: 1400px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+
+
+}
+
+
+/* style for links in the nav*/
+.topnav a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: all 0.3s ease;
+
+}
+
+/*style for the h1 element of the header */
+.header h1 {
+  color: white;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(255, 155, 200);
+}
+
+/* style for the hero banner with background image*/
+.hero-banner {
+  margin: 0;
+  height: 150px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-image: url(../images/banner-2.jpg);
+
+}
+/*style for the hero banner h2*/
+.hero-banner h2 {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+/*style for the page-section-1 class*/
+.page-section-1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+/*style for the col-1 class*/
+.col-1 {
+  width: 72%;
+  justify-content: center;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+}
+
+/*style for the col-2 class*/
+.col-2 {
+  width: 38%;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+/*style for col-1 h2 class*/
+.col-1 h2 {
+  font-size: 40px;
+}
+/*style for the col-1 paragraph class*/
+.col-1 p {
+  padding-right: 20px;
+  padding-top: 20px;
+}
+/*style for the page-section-2*/
+.page-section-2 {
+  width: 100%;
+  height: 100%;
+}
+/*style for image-1*/
+.img-1 {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+/*style for page-section-2 h2*/
+.page-section-2 h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+/*style for items for the grid*/
+.item-1 {
+  grid-area: Krecs;
+
+}
+
+.item-2 {
+  grid-area: Netflix;
+
+}
+
+.item-3 {
+  grid-area: apple;
+
+}
+
+.item-4 {
+  grid-area: amazon;
+
+}
+
+.item-5 {
+  grid-area: image-5;
+
+}
+/*style for grid in the row div)*/
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'Krecs Krecs'
+    'Netflix apple'
+    'amazon image-5';
+  grid-gap: 10px;
+  background-color:white;
+  padding: 10px;
+}
+/*style for row div (container)*/
+ .row {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 2%;
+} 
+
+/*style for card images*/
+
+.card img {
+  object-fit:fill;
+  height: 100%;
+  width:100%;
+  border: 5px solid #555;
+  display: block;
+}
+/*style for card*/
+.card {
+  position: relative;
+}
+/*style for overlay*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:1;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+/*style for page section contact */
+.page-section-contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+
+}
+/*style for page scetion contact h2*/
+.page-section-contact h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+/*style for page contact li*/
+.page-section-contact li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 50;
+}
+/*style for page contact link*/
+.page-section-contact a {
+  color: white;
+  text-decoration: none;
+}
+/*style for page contact a hover*/
+.page-section-contact a:hover {
+  color: rgb(255, 155, 200);
+}
+
+
+/* style for the footer */
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+
+
+}
+
+/* style for the footer paragraph */
+.footer p {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+/*media quieries at 768px and 500px*/
+@media(max-width:768px) {
+
+  .row {
+    display: block;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+   
+  }
+   body{
+    width: 100%;
+    height: 100%;
+ }
+ .col-1 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+ .col-2 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+}
+
+@media (max-width:500px) {
+
+   body{
+    width: 100%;
+    height: 100%;
+ }
+ .hero-banner h2 {
+  font-size: 40px;
+}
+ .page-section-1 {
+  display: block;
+  padding: 0;
+}
+.col-1 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.col-2 {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+  
+.row {
+  display: block;
+}
+
+}
